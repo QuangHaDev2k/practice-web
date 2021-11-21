@@ -1,0 +1,100 @@
+:root {
+    --primary-color:#f2726a;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,#9a42d4,#f2726a);
+    font-family: sans-serif;
+    display: flex;
+}
+
+.card {
+    margin: auto;
+    height: 400px;
+    width: 300px;
+    background-color: #282f38;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card__img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: var(--primary-color) solid 4px;
+    margin: 0px auto 15px auto;
+    overflow: hidden;
+    transform: translateY(25px);
+}
+
+.card__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    cursor: pointer;
+}
+
+.card__img:hover {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: unset;
+    transform: unset;
+    transition: 0.3s;
+}
+
+.card__name {
+    color: white;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 40px;
+}
+
+.card__job {
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.card__social {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 35px 10px;
+}
+
+.card__social i {
+    color: white;
+    font-size: 20px;
+}
+
+.card__social i:hover {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.card__btn {
+    margin: auto;
+    text-align: center;
+}
+
+.card__btn button {
+    height: 40px;
+    width: 125px;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 2px var(--primary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card__btn button:hover {
+    background-color: var(--primary-color);
+}
